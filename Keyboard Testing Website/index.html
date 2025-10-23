@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Layout Display</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Keyboard Optimization</h1>
+    <div class="container">
+        <!-- Left Keyboard Section -->
+        <div class="keyboard-container">
+            <div class="keyboard-header">
+                <h2>QWERTY Layout</h2>
+            </div>
+            <div id="keyboard-left">
+                <!-- Alphabet keys row 1 -->
+                <div class="row">
+                    <div class="key" data-key="KeyQ">Q</div>
+                    <div class="key" data-key="KeyW">W</div>
+                    <div class="key" data-key="KeyE">E</div>
+                    <div class="key" data-key="KeyR">R</div>
+                    <div class="key" data-key="KeyT">T</div>
+                    <div class="key" data-key="KeyY">Y</div>
+                    <div class="key" data-key="KeyU">U</div>
+                    <div class="key" data-key="KeyI">I</div>
+                    <div class="key" data-key="KeyO">O</div>
+                    <div class="key" data-key="KeyP">P</div>
+                </div>
+                <!-- Alphabet keys row 2 -->
+                <div class="row">
+                    <div class="key" data-key="KeyA">A</div>
+                    <div class="key" data-key="KeyS">S</div>
+                    <div class="key" data-key="KeyD">D</div>
+                    <div class="key" data-key="KeyF">F</div>
+                    <div class="key" data-key="KeyG">G</div>
+                    <div class="key" data-key="KeyH">H</div>
+                    <div class="key" data-key="KeyJ">J</div>
+                    <div class="key" data-key="KeyK">K</div>
+                    <div class="key" data-key="KeyL">L</div>
+                </div>
+                <!-- Alphabet keys row 3 -->
+                <div class="row">
+                    <div class="key" data-key="KeyZ">Z</div>
+                    <div class="key" data-key="KeyX">X</div>
+                    <div class="key" data-key="KeyC">C</div>
+                    <div class="key" data-key="KeyV">V</div>
+                    <div class="key" data-key="KeyB">B</div>
+                    <div class="key" data-key="KeyN">N</div>
+                    <div class="key" data-key="KeyM">M</div>
+                </div>
+            </div>
+            <div class="distance-display">
+                Left Keyboard Distance: <span id="distance-value-left">0</span>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="divider"></div>
+
+        <!-- Right Keyboard Section with Dropdown -->
+        <div class="keyboard-container">
+            <div class="keyboard-header">
+                <select id="layout-select">
+                    <option value="qwerty">QWERTY Layout</option>
+                    <option value="layout1">Layout 1</option>
+                    <option value="layout2">Layout 2</option>
+                    <option value="layout3">Layout 3</option>
+                </select>
+            </div>
+            <div id="keyboard-right">
+                <!-- Alphabet keys row 1 -->
+                <div class="row">
+                    <div class="key" data-key="KeyQ">Q</div>
+                    <div class="key" data-key="KeyW">W</div>
+                    <div class="key" data-key="KeyE">E</div>
+                    <div class="key" data-key="KeyR">R</div>
+                    <div class="key" data-key="KeyT">T</div>
+                    <div class="key" data-key="KeyY">Y</div>
+                    <div class="key" data-key="KeyU">U</div>
+                    <div class="key" data-key="KeyI">I</div>
+                    <div class="key" data-key="KeyO">O</div>
+                    <div class="key" data-key="KeyP">P</div>
+                </div>
+                <!-- Alphabet keys row 2 -->
+                <div class="row">
+                    <div class="key" data-key="KeyA">A</div>
+                    <div class="key" data-key="KeyS">S</div>
+                    <div class="key" data-key="KeyD">D</div>
+                    <div class="key" data-key="KeyF">F</div>
+                    <div class="key" data-key="KeyG">G</div>
+                    <div class="key" data-key="KeyH">H</div>
+                    <div class="key" data-key="KeyJ">J</div>
+                    <div class="key" data-key="KeyK">K</div>
+                    <div class="key" data-key="KeyL">L</div>
+                </div>
+                <!-- Alphabet keys row 3 -->
+                <div class="row">
+                    <div class="key" data-key="KeyZ">Z</div>
+                    <div class="key" data-key="KeyX">X</div>
+                    <div class="key" data-key="KeyC">C</div>
+                    <div class="key" data-key="KeyV">V</div>
+                    <div class="key" data-key="KeyB">B</div>
+                    <div class="key" data-key="KeyN">N</div>
+                    <div class="key" data-key="KeyM">M</div>
+                </div>
+            </div>
+            <div class="distance-display">
+                Right Keyboard Distance: <span id="distance-value-right">0</span>
+            </div>
+        </div>
+        
+    </div>
+    <div class="textarea-container">
+        <h2>Typed Content:</h2>
+    </div>
+
+    
+
+    <!-- Text area to show typed content -->
+    
+
+    <!-- External JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+/* Global styles for body */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 10px 30px;
+    background-color: #000; /* Black background */
+}
+
+h1 {
+    color: white;
+    text-decoration: underline;
+    font-size: 3em;
+}
+
+/* Main container for the keyboards */
+.container {
+    margin: 0px 80px;
+    padding: 50px 0; /* Adjusted padding for better alignment */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100; /* Adjusted to auto to handle text area below */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Individual keyboard container styles */
+.keyboard-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #222; /* Darker background for keyboards */
+    border: 2px solid #ff9800; /* Highlight border color */
+    border-radius: 10px;
+    margin: 0 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+/* Header styles for keyboards */
+.keyboard-header {
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: 'Verdana';
+    color: #ff9800; /* Bright orange for headings */
+    font-size: 24px;
+    text-decoration: underline;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #ff9800; /* Bright orange border */
+    background-color: #444; /* Darker background for dropdown */
+    color: #fff;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+/* Rows for keys */
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px; /* Extra spacing between rows */
+}
+
+/* Key styles */
+.key {
+    background-color: #444; /* Dark background for keys */
+    color: white;
+    padding: 18px 22px;
+    margin: 5px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    user-select: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.key:hover {
+    background-color: #666; /* Lighter background on hover */
+}
+
+.key.active {
+    background-color: #ff9800; /* Highlight color for active key */
+}
+
+.key:active {
+    transform: translateY(3px); /* Key press effect */
+}
+
+/* Divider between the two keyboard sections */
+.divider {
+    width: 5px;
+    background-color: #ff9800; /* Bright orange divider */
+    height: 100%;
+    margin: 0 10px;
+}
+
+/* Distance display styling */
+.distance-display {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #ff9800;
+}
+
+/* Styles for the typed text textarea */
+#typed-text {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding: 15px;
+    width: 80%; /* Adjust width based on available screen space */
+    background-color: #111; /* Dark background for textarea */
+    color: #ff9800; /* Orange text for consistency */
+    font-size: 18px;
+    border: 2px solid #ff9800; /* Orange border */
+    border-radius: 8px;
+    outline: none;
+    resize: none; /* Disable resizing */
+}
+
+/* Make textarea focus more visible */
+#typed-text:focus {
+    border-color: #ffb84d; /* Slightly lighter orange on focus */
+    background-color: #222; /* Darker background on focus */
+}
